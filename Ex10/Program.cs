@@ -13,8 +13,10 @@ namespace Ex10
          */
         static void Main(string[] args)
         {
-            int nb = 8;
-            Console.WriteLine(test(nb));
+            Console.WriteLine(test(1));
+            Console.WriteLine(test(3));
+            Console.WriteLine(test(8));
+            Console.WriteLine(test(7));
             Console.ReadKey();
         }
 
