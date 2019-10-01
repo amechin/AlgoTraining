@@ -13,7 +13,7 @@ namespace Ex7
          */
         static void Main(string[] args)
         {
-            string input = "Adrien";
+            string input = "Marie";
             Console.WriteLine(test(input));
             Console.ReadKey();
         }
@@ -24,9 +24,9 @@ namespace Ex7
             {
                 char first = str[0];
                 char last = str[str.Length - 1];
-                str = str.Remove(0);
-                str = str.Remove(str.Length - 1);
-                str = last.ToString() + str + first.ToString();
+                str = str.Remove(0, 1);
+                str = str.Remove(str.Length - 1, 1);
+                str = last.ToString().ToUpper() + str + first.ToString().ToLower();
             }
             return str;
         }
