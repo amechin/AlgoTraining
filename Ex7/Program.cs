@@ -29,6 +29,9 @@ namespace Ex7
                 str = last.ToString().ToUpper() + str + first.ToString().ToLower();
             }
             return str;
+
+            //return str.Length > 1
+            //    ? str.Substring(str.Length - 1) + str.Substring(1, str.Length - 2) + str.Substring(0, 1) : str;
         }
     }
 }
